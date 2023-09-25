@@ -14,8 +14,8 @@ namespace Library_EFCore.NewFolder
         public int TraID { get; set; }
         [Required]
         public DateTime borrowing_date { get; set; }
-        [Required]
-        public DateTime return_date { get; set; }
+        
+        public DateTime? return_date { get; set; }
 
 
         [ForeignKey("BookManagement")]
